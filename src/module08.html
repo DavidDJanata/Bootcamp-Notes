@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 08</title>
+</head>
+
+<body>
+    <header>
+        <h1>Module 08: TypeScript and OOP</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./modules.html">Modules</a></li>
+                <li><a href="./keyWords.html">Key Words</a></li>
+                <li><a href="./notes.html">Notes</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="installing_ts">
+            <h3>Installing / Running TypeScript</h3>
+            <p>
+                You will need to have Node.js installed and then run the following npm command:
+                <br> <em>npm i typescript --save-dev </em> <br><strong>or</strong><br>
+                <em>npm i -D typescript</em><br>
+                This will install typescript as a developer dependency instead of a standard dependency.
+            </p>
+        </section>
+        <section id="0801 ts_setup">
+            <h3>0801 TS Setup</h3>
+            <ul>
+                <li>In package.json, the scripts are npm commands that can be run. The left side being the commands, and the right side being the instructions.</li>
+                <li><strong>npm (Node Package Manager):</strong> Used for install, uninstalls, running programs</li>
+                <li><strong>npx (Node Package Executor):</strong> Runs what ever command is immediatley after the commmand</li> 
+                <li><strong>npm build:</strong> Runs npx tsc (TypeScript Compiler)</li>
+                <li><strong>npm run start:</strong> Runs npm build, and then runs command "node dist/index.js" - which creates a folder named "dist" and stores the newly transpiled "index.js" file in it</li>
+                <li>Just like how package.json contains our js settings, <em>tsconfig.json</em> contains our ts settings</li>
+                <li>In tsconfig.json:</li>
+                <ul>
+                    <li><strong>target:</strong> sets the intended javascript (ES) version</li>
+                    <li><strong>module:</strong> sets which module code is generated</li>
+                    <li><strong>rootDir:</strong> sets the root folder or your source files</li>
+                    <li><strong>outDir:</strong> sets the output folder to send files to</li>
+                    <li><strong>noEmitOnError:</strong> determines whether or not the tsc will continue if errors are detected</li>
+                    <li><strong>include:</strong> makes sure all associated files are included</li>
+                </ul>
+            </ul>
+        </section>
+        <section id="0802 ts_setup">
+            <h3>0802 TS Setup</h3>
+            <ul>
+                <li>Install Typescript as a developer dependency via npm i -D typescript</li>
+                <li>Bring tsconfig.json file from 0801 to reuse code</li>
+                <li>Or: <em>npx tsc --init</em> <strong>(Not reccomended early on)</strong></li>
+            </ul>
+        </section>
+        <section id="0803 typescript_types">
+            <h3>0803 TypeScript Types</h3>
+            <ul>
+                <li>01:27:23</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
